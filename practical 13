@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Foodie Restaurant</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.hero{
+background:black;
+color:white;
+padding:60px;
+text-align:center;
+}
+
+.card:hover{
+transform:scale(1.05);
+transition:0.3s;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:15px;
+}
+</style>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand">Foodie</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link active">Home</a></li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Menu</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item">Pizza</a></li>
+<li><a class="dropdown-item">Burger</a></li>
+<li><a class="dropdown-item">Desserts</a></li>
+</ul>
+</li>
+
+<li class="nav-item"><a class="nav-link">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="hero">
+<h1>Welcome to Foodie Restaurant</h1>
+<p>Delicious Food | Fresh Taste</p>
+<button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal">Book Table</button>
+</div>
+
+
+<div class="container mt-3">
+<ol class="breadcrumb">
+<li class="breadcrumb-item">Home</li>
+<li class="breadcrumb-item active">Menu</li>
+</ol>
+</div>
+
+
+<div class="container mt-4">
+<div class="row g-3">
+
+<div class="col-md-4">
+<div class="card shadow text-center p-3">
+<h5>Pizza</h5>
+<p>Cheesy & Hot</p>
+<button class="btn btn-dark">Order</button>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card shadow text-center p-3">
+<h5>Burger</h5>
+<p>Juicy & Crispy</p>
+<button class="btn btn-dark">Order</button>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card shadow text-center p-3">
+<h5>Dessert</h5>
+<p>Sweet Treats</p>
+<button class="btn btn-dark">Order</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="container mt-5">
+<h4>Table Reservation</h4>
+
+<form class="shadow p-3 bg-light">
+<input class="form-control mb-3" placeholder="Your Name">
+<input class="form-control mb-3" placeholder="Phone Number">
+<input type="date" class="form-control mb-3">
+<button class="btn btn-dark w-100">Book Now</button>
+</form>
+</div>
+
+
+<div class="modal fade" id="modal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Reservation Confirmed</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+Your table has been booked successfully 🍽️
+</div>
+<div class="modal-footer">
+<button class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+<footer class="mt-5">
+<p>© 2026 Foodie Restaurant</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
