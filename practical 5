@@ -1,0 +1,52 @@
+<html>
+<title> Practical 5 </title>
+<body background="C:\Users\Students\Downloads\resum.jpg">
+<center>
+<h1> RESUME </h1>
+</center>
+<h3>NAME = satish reddy </h3>
+<h3>EMAIL = satishr.cse25@sbjit.edu.in</h3>
+<img src="C:\Users\Students\Downloads\pratham.jpg" width="150" style="float:right;">
+
+<h3>Education Details</h3>
+
+<table border="1" cellpadding="8">
+<tr>
+<th>Qualification</th>
+<th>college</th>
+<th>Year</th>
+<th>Percentage</th>
+</tr>
+
+<tr>
+<td>B.Tech (1st Year)</td>
+<td>Sb jain clg</td>
+<td>2025</td>
+<td>7.25 sgpa</td>
+</tr>
+
+<tr>
+<td>12th</td>
+<td>Ravi juniour clg</td>
+<td>2024</td>
+<td>62%</td>
+</tr>
+  
+<tr>
+<td>10th</td>
+<td>sarswati juniour college</td>
+<td>2022</td>
+<td>65%</td>
+</tr>
+
+<table>
+<h3>Technical Skills</h3>
+<ul>
+<li>riding bikes</li>
+<li>Basic C Programming</li>
+<li> </li>
+<li>Internet Basics</li>
+</ul>
+
+</body>
+</html>
