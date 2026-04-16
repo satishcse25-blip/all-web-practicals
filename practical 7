@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Tribute Page</title>
+
+<style>
+body{
+background-color: lightyellow;
+font-family: Arial;
+}
+
+/* Navigation Bar */
+.nav{
+background-color: black;
+text-align: center;
+}
+
+.nav a{
+color: white;
+text-decoration: none;
+}
+
+/* Box */
+.box{
+border: 2px solid black;
+background-color: white;
+text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="nav">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Achievements</a>
+</div>
+
+<div class="box">
+<h1>Dr. A. P. J. Abdul Kalam</h1>
+
+<p>Dr. A. P. J. Abdul Kalam ek great scientist aur India ke President the.</p>
+
+<h2>Achievements</h2>
+<p>Unhone missile banane me important role play kiya aur Bharat Ratna mila.</p>
+
+<img src="abdul.jpg" height="200">
+
+</div>
+
+</body>
+</html>
