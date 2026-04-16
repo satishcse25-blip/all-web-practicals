@@ -1,0 +1,203 @@
+<html>
+<head>
+    <title>HTML5 APIs Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: lightgray;
+        }
+
+        header {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .drag-items {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 15px;
+        }
+
+        .item {
+            background: blue;
+            color: white;
+            padding: 10px;
+            cursor: grab;
+        }
+
+        #dropZone {
+            border: 2px dashed black;
+            height: 120px;
+            line-height: 120px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+        }
+
+        footer {
+            text-align: center;
+            background: black;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>HTML5 Advanced APIs Demo</h1>
+</header>
+
+<div class="container">
+
+    <!-- Drag & Drop -->
+    <div class="card">
+        <h2>Drag & Drop (Food Menu)</h2>
+
+        <div class="drag-items">
+            <div draggable="true" class="item">🍕 Pizza</div>
+            <div draggable="true" class="item">🍔 Burger</div>
+            <div draggable="true" class="item">🥤 Cold Drink</div>
+        </div>
+
+        <div id="dropZone">Drop your order here</div>
+    </div>
+
+    <!-- Geolocation -->
+    <div class="card">
+        <h2>Geolocation</h2>
+
+        <button onclick="getLocation()">Show My Current Location</button>
+
+        <p id="location">Click the button to get your location</p>
+
+        <a id="mapLink" target="_blank"></a>
+    </div>
+
+    <!-- Web Storage -->
+    <div class="card">
+        <h2>Web Storage (User Info)</h2>
+
+        <input type="text" id="nameInput" placeholder="Enter your name">
+
+        <br><br>
+
+        <button onclick="saveData()">Save Name</button>
+        <button onclick="clearData()">Clear Data</button>
+
+        <p id="result"></p>
+    </div>
+
+</div>
+
+<footer>
+    <p>Project using HTML5 APIs: Drag & Drop | Geolocation | Web Storage</p>
+</footer>
+
+<script>
+    // Drag & Drop
+    let items = document.querySelectorAll(".item");
+    let dropZone = document.getElementById("dropZone");
+
+    items.forEach(item => {
+        item.addEventListener("dragstart", function(e) {
+            e.dataTransfer.setData("text", e.target.innerText);
+        });
+    });
+
+    dropZone.addEventListener("dragover", function(e) {
+        e.preventDefault();
+    });
+
+    dropZone.addEventListener("drop", function(e) {
+        e.preventDefault();
+        let data = e.dataTransfer.getData("text");
+
+        let newItem = document.createElement("div");
+        newItem.innerText = data;
+        newItem.className = "item";
+
+        dropZone.innerHTML = "Your Order:";
+        dropZone.appendChild(newItem);
+    });
+
+
+    // Geolocation
+    function getLocation() {
+        let output = document.getElementById("location");
+        let mapLink = document.getElementById("mapLink");
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                let lat = position.coords.latitude;
+                let lon = position.coords.longitude;
+
+                output.innerHTML =
+                    "📍 Your Location:<br>" +
+                    "Latitude: " + lat + "<br>" +
+                    "Longitude: " + lon;
+
+                mapLink.href = "https://www.google.com/maps?q=" + lat + "," + lon;
+                mapLink.innerHTML = "👉 Open in Google Maps";
+            });
+        } else {
+            output.innerHTML = "Geolocation is not supported by your browser";
+        }
+    }
+
+
+    // Web Storage
+    window.onload = function() {
+        let name = localStorage.getItem("username");
+        if (name) {
+            document.getElementById("result").innerHTML =
+                "Welcome back, " + name + " 👋";
+        }
+    };
+
+    function saveData() {
+        let name = document.getElementById("nameInput").value;
+        localStorage.setItem("username", name);
+
+        document.getElementById("result").innerHTML =
+            "✅ Name saved: " + name;
+    }
+
+    function clearData() {
+        localStorage.removeItem("username");
+
+        document.getElementById("result").innerHTML =
+            "❌ Data cleared";
+    }
+</script>
+
+</body>
+</html>
