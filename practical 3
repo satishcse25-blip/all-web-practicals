@@ -1,0 +1,25 @@
+<html>
+<title> practical three </title>
+<body bgcolor="pink"></body>
+<h1> satish reddy </h1>
+<h3> CS25043</h3>
+	<ol>
+	<li>ABC</li>
+	<li>XYZ</li>
+	<li>PQR</li>
+	</ol>
+	<ul>
+	<li>ABC</li>
+	<li>XYZ</li>
+	<li>PQR</li>
+	</ul>
+	<dl>
+  <dt>
+        <dd> smart </dd>
+        <dd> good </dd>
+	<dd> good in study </dd>
+	</dt>
+	</dl>
+	<img src="C:\Users\ADMIN\Downloads\ferrari.webp"width="200">
+	<a href="https://www.google.com"> Click here to view </a>
+</html>
