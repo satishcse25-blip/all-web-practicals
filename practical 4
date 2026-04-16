@@ -1,0 +1,54 @@
+<html>
+<title> practical 4 </title>
+<body bgcolor="orange">
+<center>
+<h1>TIME TABLE OF satish</h1>
+<h3>CS25043</h1>
+<center>
+<table border "6" cellspacing="6" cellpadding ="10">
+<tr>
+<th> Day/time </th>
+<th> 7 to 8 </th>
+<th> 8 to 9 </th>
+<th> 9 to 10 </th>
+<th> 10 to 11</th>
+</tr>
+<th> monday </t>
+<td> smp </td>
+<td> che </td>
+<td rowspan="6">dinner</td>
+<td> phy </td>
+</tr>
+<tr>
+<th> tuesday </th>
+<td> maths </td>
+<td> che </td>
+<td> phy </td>
+</tr>
+<tr>
+<th> wednesday </th>
+<td> smp </td>
+<td> phy </td>
+<td> egd </td>
+</tr>
+<tr>
+<th> thursday </th>
+<td> egd </td>
+<td> maths2 </td>
+<td> chem </td>
+</tr>
+<tr>
+<th> friday </th>
+<td> maths2 </td>
+<td> egd </td>
+<td> che </td>
+</tr>
+<tr>
+<th> saturday </th>
+<td> egd </td>
+<td> maths2 </td>
+<td> phy </td>
+</tr>
+</html>
+</body>
+</table>
