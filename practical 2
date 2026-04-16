@@ -1,0 +1,13 @@
+<html>
+<title>Practical first</title>
+<head> 
+      </head>
+<body bgcolor="red">
+     <p> here we are learning new element</p>
+     <p><b>b is used to bold </b></p>
+     <p><i>i is used to Italic </i></p>
+     <p><u>u is used to underline </u></p>
+     <h1 align="center">HEY SATISH REDDY</hr>
+     <p> my usn is,<br> CS25043. I am secton of A,1st year,at sb jain</p>
+</body>
+</html>
