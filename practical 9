@@ -1,0 +1,80 @@
+<html>
+<head>
+ <title>My Webpage</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/6.0.0/css/all.min.css">
+ 
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+ <h1>My Website <i class="fas fa-star"></i></h1>
+</header>
+<div class="container">
+ <div class="box">
+ <i class="fas fa-heart"></i>
+ <h3>Love</h3>
+ <p>This is first box</p>
+ </div>
+ <div class="box">
+ <i class="fas fa-smile"></i>
+ <h3>Happy</h3>
+ <p>This is second box</p>
+ </div>
+ <div class="box">
+ <i class="fas fa-thumbs-up"></i>
+ <h3>Like</h3>
+ <p>This is third box</p>
+ </div>
+</div>
+</body>
+</html>
+
+
+
+
+CSS CODE
+
+
+body {
+margin: 0;
+font-family:'poppins';
+text-align:center;
+ 
+}
+header {
+ background:lightpink;
+ color: black;
+ padding: 15px;
+width:100%;
+}
+.container {
+ column-count: 3;
+ padding: 10px;
+}
+.box {
+ background: lightblue;
+ margin: 20px;
+ padding: 10px;
+ display: inline-block;
+ width: 20%;
+ border-radius: 8px;
+ animation: fade 1s;
+ transition: 0.3s;
+}
+.box:hover {
+ transform: translateY(-100px);
+}
+@keyframes fade {
+ from {opacity: 0;}
+ to {opacity: 1;}
+}
+@media(max-width: 768px) {
+ .container {
+ column-count: 1;
+ }
+}
