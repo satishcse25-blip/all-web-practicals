@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>PAN Application Form</title>
+</head>
+
+<body bgcolor="beige">
+
+<h2 align="center">Online PAN Registration</h2>
+
+<form>
+
+<fieldset>
+<legend>Application Details</legend>
+
+PAN Application Type :
+<select>
+<option>Select Type</option>
+<option>New PAN Application</option>
+<option>Change / Correction</option>
+</select>
+
+<br><br>
+
+Applicant Category :
+<select>
+<option>self</option>
+<option>Company</option>
+<option>Trust</option>
+<option>HUF</option>
+</select>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Applicant Information</legend>
+
+Title :
+<select>
+<option>Mr</option>
+<option>Mrs</option>
+<option>Ms</option>
+</select>
+
+<br><br>
+
+Last Name :
+<input type="text" name="lname">
+
+<br><br>
+
+First Name :
+<input type="text" name="fname">
+
+<br><br>
+
+Middle Name :
+<input type="text" name="mname">
+
+<br><br>
+
+Date of Birth :
+<input type="date" name="dob">
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Contact Details</legend>
+
+Email ID :
+<input type="email" name="email">
+
+<br><br>
+
+Mobile Number :
+<input type="text" name="mobile">
+
+<br><br>
+
+Are you Citizen of India ?
+
+<input type="radio" name="citizen"> Yes
+<input type="radio" name="citizen"> No
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Other Details</legend>
+
+PAN Number :
+<input type="text" name="pan">
+
+<br><br>
+
+Select Language :
+<select>
+<option>English</option>
+<option>Hindi</option>
+<option>Marathi</option>
+</select>
+
+<br><br>
+
+<input type="checkbox"> I agree to terms and conditions
+
+</fieldset>
+
+<br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
